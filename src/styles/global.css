@@ -215,12 +215,14 @@ h1 { font-family: var(--font-headline); }
   min-width: 360px;
   border-collapse: collapse;
   font-size: 13.5px;
+  table-layout: fixed;
 }
 .article-body th, .article-body td {
   padding: 9px 12px;
   text-align: left;
   border-bottom: 1px solid var(--gridline);
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 .article-body thead th {
   background: var(--surface-1);
